@@ -53,25 +53,62 @@
 		</div>
 	</header>
 
-	<section class="container-fluid-1280" id="content">
-		<h1 class="hide-accessible">${the_title}</h1>
+	<div class="section-one">
+		<section class="container-fluid-1280" id="content">
+			<h1 class="hide-accessible">${the_title}</h1>
 
-		<#if selectable>
-			<@liferay_util["include"] page=content_include />
-		<#else>
-			${portletDisplay.recycle()}
-
-			${portletDisplay.setTitle(the_title)}
-
-			<@liferay_theme["wrap-portlet"] page="portlet.ftl">
+			<#if selectable>
 				<@liferay_util["include"] page=content_include />
-			</@>
-		</#if>
-	</section>
+			<#else>
+				${portletDisplay.recycle()}
+
+				${portletDisplay.setTitle(the_title)}
+
+				<@liferay_theme["wrap-portlet"] page="portlet.ftl">
+					<@liferay_util["include"] page=content_include />
+				</@>
+			</#if>
+		</section>
+	</div>
+
+	<div class="bg-section-two"> 
+		<section class="container-fluid-1280 section-two">
+		</section>
+	</div>
+
+	<div class="bg-section-three"> 
+		<section class="container-fluid-1280 section-three">
+			
+			<ul>
+				<li>
+					<div class="content-box">
+						<div class="logo-page logo-page-1"></div>
+						<div class="content-box-info">Over 7 Million Custormers served</div>
+					</div>
+				</li>	
+				<li>
+					<div class="content-box">
+						<div class="logo-page logo-page-2"></div>
+						<div class="content-box-info">Over 7 Million Custormers served</div>
+					</div>
+				</li>	
+				<li>
+					<div class="content-box">
+						<div class="logo-page logo-page-3"></div>
+						<div class="content-box-info">Over 7 Million Custormers served</div>
+					</div>
+				</li>					
+			</ul>
+
+		</section>
+	</div>
 
 	<footer class="container-fluid-1280" id="footer" role="contentinfo">
 		<div class="row">
 			<@liferay.language key="powered-by" /> <a href="http://www.liferay.com" rel="external">Liferay</a>
+		</div>
+		<div class="row">
+			Copyright © 2016 All Rights Reserved.
 		</div>
 	</footer>
 </div>

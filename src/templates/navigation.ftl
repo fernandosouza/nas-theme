@@ -9,6 +9,31 @@
 				</div>
 			</#if>
 
+			<div class="navbar-left">
+
+				<div class="logo"></div>
+
+				<ul>
+					<li>
+						<a>Health</a>
+					</li>
+					<li>
+						<a>Dental</a>
+					</li>
+					<li>
+						<a>Vision</a>
+					</li>
+					<li>
+						<a>Life</a>
+					</li>
+					<li>
+						<a>Short-term</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="btn-login">Login</div>			
+
 			<div class="navbar-right">
 				<@liferay.navigation_menu default_preferences="${freeMarkerPortletPreferences}" />
 			</div>

@@ -1,9 +1,176 @@
 @import "portlet_hello_world";
 
 body {
-	background-color: $bg-color;
-	background-image: url('../images/25751947202_4f58605074_o.jpg');
-	background-size: cover;
+	background-color: #fff;
+}
+
+.navbar-header {
+	display: none;
+}
+
+header#banner {
+	padding: 0;
+	background-color: white;
+	max-width: 100%;
+}
+
+footer#footer {
+	margin: 0;
+}
+
+.navbar-right {
+	display: none;
+}
+
+.logo {
+	background-image: url('../images/logo.png');
+	width: 62px;
+	height: 54px;
+	margin-top: -14px;
+	float: left;
+	cursor: pointer;
+}
+
+.btn-login {
+	width: 100px;
+	background-color: #fff;	
+	border: 1px solid #3E9CFC;
+	border-radius: 2px;
+	color: #3E9CFC;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 18px;
+	float: right;
+    padding: 8px;
+    text-align: center;
+    margin-right: 11px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+	background-color: #3E9CFC;	
+	color: #fff;
+}
+
+.navbar-left {
+	
+	margin-top: 30px;
+
+	ul {
+		float: left;
+		list-style: none;
+		padding-left: 7px;
+		
+		li:first-child {
+			margin-left: 20px;
+		}
+
+		li {			
+			height: 44px;
+			position: relative;;
+			float: left;
+			cursor: pointer;
+			margin-left: 40px;			
+
+			a {				
+				color: #3e9cfc;				
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 24px;				
+				padding: 10px 7px 12px;
+			}
+		}
+	}
+}
+
+.section-one {	
+	background-image: url('../images/background_image.png');
+	background-size: cover;	
+	height: 800px;		
+}
+
+.section-two {
+	background-image: url('../images/individual_family_bar.png');
+	background-size: cover;	
+	height: 200px;	
+}
+
+.bg-section-two {
+	background-color: #3E9CFC;
+}
+
+.section-three {
+
+	padding: 80px 110px;
+
+	ul {			
+		padding: 0;
+		list-style: none;	
+
+		li {			
+			cursor: pointer;
+			margin-right: 32px;	
+			float: left;
+			
+			.content-box {
+				transition: all .2s ease-in-out;				
+				text-align: center;
+				padding-top: 50px;
+				width: 332px;
+				height: 320px;
+				background-color: #fff;
+				border-radius: 6px;
+				box-shadow: 0 0 20px rgba(0, 4, 61, 0.1);
+
+				.content-box-info {
+					text-align: center;
+					margin: 0 auto;
+					width: 225px;
+					color: #4a4a4a;					
+					font-size: 26px;
+					font-weight: 200;
+					line-height: 36px;
+					padding-top: 30px;
+				}
+			}
+
+			.logo-page {				
+				height: 80px;
+				margin: 0 auto;			
+			}
+
+			.logo-page-1 {
+				background-image: url('../images/page-1.png');
+				width: 85px;
+			}
+
+			.logo-page-2 {
+				background-image: url('../images/page-2.png');
+				width: 85px;
+			}
+
+			.logo-page-3 {
+				background-image: url('../images/page-3.png');
+				width: 89px;
+			}
+
+		}
+
+		li:last-child {
+			margin-right: 0;
+		}
+
+		li .content-box:hover {
+			transform: scale(1.1); 
+		}
+
+	}
+
+}
+
+.bg-section-three {
+	background-color: #fafafa;
 }
 
 .container-fluid-1280 .row {

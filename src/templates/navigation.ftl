@@ -32,7 +32,7 @@
 				</ul>
 			</div>
 
-			<div class="btn-login">Login</div>			
+			<div class="btn-login"><a href="http://localhost:8080/c/portal/login?p_l_id=20146">Login</a></div>			
 
 			<div class="navbar-right">
 				<@liferay.navigation_menu default_preferences="${freeMarkerPortletPreferences}" />

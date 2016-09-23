@@ -458,3 +458,25 @@ footer#footer {
 		outline: 0;
 	}
 }
+
+.ae-sr-only {
+	display: none;
+}
+
+.nas-presentation-form {
+	$green-color: #38e9c0;
+
+	.lfr-ddm-form-field-container {
+		padding: 10px 0 10px 0;	
+	}
+	
+	.liferay-ddm-form-field-paragraph {
+		h1, + p {
+			margin-top: 0;	
+		}
+	}
+
+	.liferay-ddm-form-field-paragraph h1 {
+		color: $green-color;
+	}
+}
